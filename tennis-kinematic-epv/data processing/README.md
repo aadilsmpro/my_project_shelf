@@ -37,4 +37,8 @@ The exported, cleaned dataset contains 4 feature columns:
 ## 🛠️ Repository Structure
 
 ```text
-|
+data processing/
+│
+├── charting-m-points.zip     # Compressed CSV file containing raw event-level Match Charting Project point logs (`charting-m-points.csv`) 
+├── match-data-processing.py  # Python file for the generation processed_epv_data.csv from charting-m-points.csv or similar files
+└── README.md                 # Project documentation
