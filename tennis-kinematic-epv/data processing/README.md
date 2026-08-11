@@ -32,15 +32,3 @@ The exported, cleaned dataset contains 4 feature columns:
 | `deficit_x_exposed` | Float | Interaction term (`recovery_deficit_m` × `exposed_area_m2`). |
 | `target` | Integer | Binary target variable ($1 = \text{Point Won by Server}$, $0 = \text{Point Lost by Server}$). |
 
----
-
-## 🚀 Execution Instructions
-
-### Step 1: Place Your Raw File
-Ensure `charting-m-points.csv` is placed in the project root directory alongside `preprocess_charting_data.py`.
-
-### Step 2: Run the ETL Script
-Execute the preprocessing pipeline in your terminal:
-
-```bash
-python preprocess_charting_data.py
