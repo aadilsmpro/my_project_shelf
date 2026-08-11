@@ -13,3 +13,9 @@ A hybrid data science and machine learning application that models Expected Poin
 This project focuses on the study and experimental/computational analysis of **Terahertz Spectroscopy** to investigate the complex optical and electromagnetic properties of materials. Terahertz radiation (0.1 THz to 10 THz) lies in the gap between microwaves and infrared light, making it a powerful non-destructive tool for probing low-energy material excitations, molecular vibrations, and carrier dynamics.
 
 ---
+
+## 🌌 Detection and Analysis of GW170814: A Binary Black Hole Merger
+
+This project presents an end-to-end data analysis and study of the gravitational wave signal **GW170814**. Observed on August 14, 2017, GW170814 was a landmark astrophysical event—marking the first-ever joint detection of a binary black hole (BBH) coalescence by the three-detector network comprising **LIGO Hanford**, **LIGO Livingston**, and **Virgo**.
+
+---
