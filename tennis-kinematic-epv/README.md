@@ -19,7 +19,7 @@ A hybrid data science and machine learning application that models Expected Poin
 ```text
 tennis-kinematic-epv/
 │
-├── data processing         # Folder for the creation of processed_epv_data.csv
+├── data processing/        # Folder for the creation of processed_epv_data.csv
 ├── app.py                  # Main Streamlit dashboard code
 ├── train_model.py          # Model for the training of XGBoost file
 ├── processed_epv_data.csv  # Sample CSV for the training of epv_xgboost_model.pkl
