@@ -32,3 +32,9 @@ The exported, cleaned dataset contains 4 feature columns:
 | `deficit_x_exposed` | Float | Interaction term (`recovery_deficit_m` × `exposed_area_m2`). |
 | `target` | Integer | Binary target variable ($1 = \text{Point Won by Server}$, $0 = \text{Point Lost by Server}$). |
 
+---
+
+## 🛠️ Repository Structure
+
+```text
+|
