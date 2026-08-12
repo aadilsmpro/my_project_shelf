@@ -6,6 +6,7 @@ Integrates custom differential pursuit kinematics, XGBoost inference,
 SHAP explainability, and Plotly surface optimization heatmaps.
 """
 
+import os
 import joblib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -73,12 +74,15 @@ HALF_LENGTH = 11.885   # Standard court half-length
 OUTER_BOUND_X = 7.5    # Extended out-of-bounds boundary X
 OUTER_BOUND_Y = 15.0   # Extended out-of-bounds boundary Y
 
-
 @st.cache_resource
 def load_model():
     """Loads the pre-trained XGBoost model artifact."""
+    # Anchor the directory path directly to where app.py lives
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(base_dir, "epv_xgboost_model.pkl")
+    
     try:
-        return joblib.load("epv_xgboost_model.pkl")
+        return joblib.load(model_path)
     except FileNotFoundError:
         st.error(
             "Model file 'epv_xgboost_model.pkl' not found. "
@@ -86,9 +90,7 @@ def load_model():
         )
         st.stop()
 
-
 model = load_model()
-
 
 class PhysicsTennisEngine:
     """
